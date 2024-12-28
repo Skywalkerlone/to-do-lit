@@ -1,2 +1,2 @@
-# to-do-lit
+# to-do-list
 a to do list web app
