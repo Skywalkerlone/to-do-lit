@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: conic-gradient( from 160deg, rgb(104, 34, 34), rgb(42, 42, 117), rgb(97, 91, 184),rgb(60, 142, 243)); 
+    padding: 10px;
+}
+.to-do-app{
+    width: 100%;
+    max-width: 540px;
+    /* background: white; */
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    background: conic-gradient( from 60deg, rgb(253, 217, 217), rgb(223, 223, 255), rgb(238, 236, 255),rgb(224, 235, 248) ) top no-repeat,
+     conic-gradient( from 120deg, rgb(253, 217, 217), rgb(223, 223, 255), rgb(238, 236, 255),rgb(224, 235, 248))  bottom no-repeat; 
+     /* background-size: 100% 50%; */
+
+}
+.to-do-app h2 img{
+    width: 20px;
+}
+.to-do-app h2{
+    color: rgb(35, 20, 91);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 35px; 
+}
+input{
+    flex: 1;
+    border: none;
+    /* outline: none; */
+    background-color: rgba(70, 70, 70, 0.3);
+    padding: 10px;
+    font-weight: 14px;
+    border-radius: 40px;
+}
+
+button{
+    border: none;
+    /* outline: none; */
+    padding: 5px 10px;
+    background-color: brown;
+    color: aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
